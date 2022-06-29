@@ -1,0 +1,68 @@
+@use 'mixins';
+
+
+.card {
+    width:280px;
+    flex-direction: column;
+}
+.card_content {
+    width:280px;
+    height: 340px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    img {
+        position: absolute;
+        object-fit: cover;
+        width:280px;
+        height: 380px;
+        z-index:-1;
+    }
+}
+
+.add_button {
+    width:280px;
+    height: 46px;
+    background-color: mixins.$color-dark;
+    border: none;
+    cursor: pointer;
+    color: mixins.$color-white;
+    font-size: 23px;
+    font-weight: 400;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top:340px;
+    &:hover {
+        background-color: mixins.$color-white;
+        border: 2px solid mixins.$color-dark;
+        color: mixins.$color-dark;
+    }
+}
+
+.card_info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin:50px 0;
+    h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color:mixins.$color-grey;
+        text-align: left;
+        margin-bottom: -10px;
+    }
+    h2 {
+        font-size: 22;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: -20px;
+    }
+    p {
+        color: mixins.$color-grey;
+        font-size: 29px;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: -10px;
+    }
+}

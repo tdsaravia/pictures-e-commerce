@@ -1,0 +1,72 @@
+@use 'mixins';
+
+.products_container {
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    justify-content:flex-start;
+    margin-right:50px;
+
+    @media screen and (max-width: 768px) {
+        display:none;
+    }
+}
+
+.products_selectors {
+    @include mixins.centered;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.products_content {
+    @include mixins.centered;
+    display:flex;
+    flex-direction: row;
+}
+.products {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.text_type { 
+    display:flex;
+    flex-direction: row;
+    h3{
+        font-size: 30px;
+        color:mixins.$color-dark;
+        font-weight: 600;
+    }
+    p {
+        font-size: 30px;
+        color:mixins.$color-grey;
+        font-weight: 300;
+    }
+}
+.sort{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    button {
+        background-color: transparent;
+        border:none;
+        width:35px;
+        height:35px;
+    }
+    p {
+        font-size: 22px;
+        color:mixins.$color-grey;
+        font-weight: 300;
+    }
+}
+
+.select {
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

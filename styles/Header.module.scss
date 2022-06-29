@@ -1,0 +1,35 @@
+@use 'mixins';
+
+.header {
+    @include mixins.centered;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    border-bottom: 4px solid mixins.$color-light-grey;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 20px 0px;
+    }
+}
+
+.header__logo {
+    height: 26px;
+    width:160px;
+
+    @media screen and (max-width: 768px) {
+        height: 20px;
+        width:140px;
+        padding: 0px 20px;
+    }
+}
+
+.header__cart {
+    height: 54px;
+    width:54px;
+    @media screen and (max-width: 768px) {
+        height: 34px;
+        width:34px;
+    }
+}
+
