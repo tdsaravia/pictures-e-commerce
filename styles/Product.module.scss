@@ -3,11 +3,13 @@
 
 .card {
     width:280px;
+    max-width:280px;
     flex-direction: column;
 }
 .card_content {
     width:280px;
     height: 340px;
+    max-height:340px;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
@@ -16,6 +18,7 @@
         object-fit: cover;
         width:280px;
         height: 380px;
+        max-height:380px;
         z-index:-1;
     }
 }
@@ -39,12 +42,28 @@
         color: mixins.$color-dark;
     }
 }
-
+.best_seller_box {
+    width: 127px;
+    height: 33px;
+    position:relative;
+    right:0;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff;
+    padding-top:0px;
+    margin:10px 0px -30px 0px;
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        padding:5px;
+    }
+}
 .card_info {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin:50px 0;
+    margin:70px 0px 10px 0px;
     h3 {
         font-size: 22px;
         font-weight: 700;
