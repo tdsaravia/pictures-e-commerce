@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Bejamas</title>
+        <title>E-Commerce Pictures</title>
         <meta name="description" content="E-commerce where you can buy your favorite photos!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
