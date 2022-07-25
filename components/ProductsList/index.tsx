@@ -64,7 +64,7 @@ const initialState = {
     isSorted: false,
     isDesc: false
   };
-const [state, dispatch] = useReducer(sortReducer, initialState);
+const [, dispatch] = useReducer(sortReducer, initialState);
 
 function sortReducer(state, action) {
     switch (action.type) {

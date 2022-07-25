@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/Product.module.scss'
-
+import Button from '../Button'
 const Product = ({data}) => {
 
     function BoxSeller() {
@@ -20,7 +20,14 @@ const Product = ({data}) => {
             <div className={styles.card_content}>
                 <img src={data.src} alt={data.alt}/>
                 <BoxSeller/>
-                <button className={styles.add_button}>ADD TO CART</button>
+                <Button 
+                className="snipcart-add-item"
+                data-item-id={data.id}
+                data-item-price={data.price}
+                data-item-image={data.src}
+                data-item-name={data.name}
+                >ADD TO CART
+                </Button>
             </div>
             <div className={styles.card_info}>
                 <h3>{data.category}</h3>

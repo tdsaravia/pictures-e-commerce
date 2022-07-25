@@ -1,0 +1,22 @@
+@use 'mixins';
+
+
+.button {
+    width:280px;
+    height: 46px;
+    background-color: mixins.$color-dark;
+    border: none;
+    cursor: pointer;
+    color: mixins.$color-white;
+    font-size: 23px;
+    font-weight: 400;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top:340px;
+    &:hover {
+        background-color: mixins.$color-white;
+        border: 2px solid mixins.$color-dark;
+        color: mixins.$color-dark;
+    }
+}

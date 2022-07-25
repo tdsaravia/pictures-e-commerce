@@ -5,13 +5,18 @@ import styles from '../../styles/Main.module.scss';
 import img1 from '../../images/image_detail_1.jpeg'
 import img2 from '../../images/image_detail_2.jpg'
 import img3 from '../../images/image_detail_3.jpg'
-
 const PhotoOfTheDay = () => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
                 <h2>Samurai King Resting</h2>
-                <button>ADD TO CART</button>
+                <button 
+                    className="snipcart-add-item"
+                    data-item-id="1"
+                    data-item-price="1000.00"
+                    data-item-image={dog}
+                    data-item-name="Samurai King Resting"
+                >ADD TO CART</button>
             </div>
             <div className={styles.image_container}>
                 <Image src={dog} alt='main-photo'/>
