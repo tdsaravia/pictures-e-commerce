@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Reac, {useState, useEffect} from 'react';
+import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss';
 import PhotoOfTheDay from '../components/DetailProduct';
