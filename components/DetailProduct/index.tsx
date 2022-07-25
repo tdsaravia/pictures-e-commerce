@@ -24,7 +24,7 @@ const PhotoOfTheDay = () => {
                     <h3>About the Samurai King Resting</h3>
                     <h4>Pets</h4>
                     <p>
-                    So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder 
+                    So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Ciceros De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Ciceros De Finibus in order to provide placeholder 
                     </p>
                     <p>
                     text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock.
